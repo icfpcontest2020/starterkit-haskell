@@ -37,13 +37,6 @@ executables:
     - -O2
     - -rtsopts
     - -with-rtsopts=-N
-    # The submission container in which the binary will be run will not
-    # necessarily have the dependencies available, so we are producing
-    # a statically linked binary.
-    # See also: https://github.com/commercialhaskell/stack/issues/3420
-    - -static
-    cc-options: -static
-    ld-options: -static -pthread
     # Here you can add dependencies specific to your binary, including your
     # own libarary.
     # dependencies:
